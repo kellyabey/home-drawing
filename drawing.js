@@ -37,13 +37,17 @@ function doorOpen(event) {
 
 window.addEventListener('keypress', nightOrDay);
 let body = document.body;
+sun.addEventListener('keypress', nightOrDay);
+let sun1 = document.body;
 
 function nightOrDay(event) {
     if (event.key == "n") {
         body.style.background = "black";
+        sun1.style.fill = "black";
     } else if (event.key == "r") {
         body.style.background = "red";
     } else {
         body.style.background = "lightblue";
+        sun1.style.fill = "gold";
     }
 }

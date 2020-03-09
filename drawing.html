@@ -1,5 +1,7 @@
 <html>
-
+<head>
+    <link rel="stylesheet" type="text/css" href="drawing.css">
+    </head>
 <body>
     <svg width="5000" height="5000">
         <rect width="400" height="300" x="500" y="300" fill="rosybrown" />
@@ -13,10 +15,12 @@
         <rect width="40" height="100" x="830" y="180" fill="brown" />
         <polygon points="500,300,700,100,900,300" fill="saddlebrown" />
 
-        <circle cx="1100" cy="120" r="100" fill="gold" />
+        <circle id="sun" cx="1100" cy="120" r="100" />
+        <ellipse class="sunglasses" id="sunglass1" cx="1050" cy="110" rx="45" ry="25" />
+        <ellipse class="sunglasses" id="sunglass1" cx="1150" cy="110" rx="45" ry="25" />
 
-        <script src="drawing.js"></script>
-        <link rel="stylesheet" type="text/css" href="drawing.css">
+        <script src = "drawing.js"></script>
+
     </svg>
 </body>
 
