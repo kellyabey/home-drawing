@@ -20,6 +20,28 @@ function lightOn(event) {
 
 }
 
+var eye1 = document.getElementById("eye1");
+var eye2 = document.getElementById("eye2");
+
+eye1.addEventListener('click', (event) => {
+    eyesClose(event)
+});
+
+eye2.addEventListener('click', (event) => {
+    eyesClose(event)
+});
+
+function eyesClose(event) {
+    let eyeBall = event.target;
+    let eyeBall1 = eyeBall.style.fill;
+    if (eyeBall1 == "black") {
+        eyeBall.style.fill = "white";
+    } else {
+        eyeBall.style.fill = "black";
+    }
+
+}
+
 var door1 = document.getElementById("door");
 door.addEventListener('click', (event) => {
     doorOpen(event)
@@ -37,17 +59,14 @@ function doorOpen(event) {
 
 window.addEventListener('keypress', nightOrDay);
 let body = document.body;
-sun.addEventListener('keypress', nightOrDay);
-let sun1 = document.body;
+
 
 function nightOrDay(event) {
     if (event.key == "n") {
         body.style.background = "black";
-        sun1.style.fill = "black";
     } else if (event.key == "r") {
         body.style.background = "red";
     } else {
         body.style.background = "lightblue";
-        sun1.style.fill = "gold";
     }
 }

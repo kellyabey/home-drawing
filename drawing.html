@@ -1,7 +1,9 @@
 <html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="drawing.css">
-    </head>
+    <link rel="stylesheet" href="drawing.css">
+</head>
+
 <body>
     <svg width="5000" height="5000">
         <rect width="400" height="300" x="500" y="300" fill="rosybrown" />
@@ -16,12 +18,19 @@
         <polygon points="500,300,700,100,900,300" fill="saddlebrown" />
 
         <circle id="sun" cx="1100" cy="120" r="100" />
-        <ellipse class="sunglasses" id="sunglass1" cx="1050" cy="110" rx="45" ry="25" />
-        <ellipse class="sunglasses" id="sunglass1" cx="1150" cy="110" rx="45" ry="25" />
+        <circle id="mouth" cx="1100" cy="160" r="20" />
+        <circle id="mouth1" cx="1100" cy="145" r="20" />
 
-        <script src = "drawing.js"></script>
+
+        <ellipse class="sunglasses" cx="1050" cy="110" rx="30" ry="25" />
+        <ellipse class="sunglasses" cx="1150" cy="110" rx="30" ry="25" />
+
+        <circle class="eyes" id="eye1" cx="1050" cy="110" r="7" />
+        <circle class="eyes" id="eye2" cx="1150" cy="110" r="7" />
+
 
     </svg>
+    <script src="drawing.js"></script>
 </body>
 
 </html>
